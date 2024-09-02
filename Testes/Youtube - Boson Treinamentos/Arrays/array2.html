@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Ordenado</title>
+    <script type="text/javascript">
+        let num = new Array(12, 34, 6, 45, 10, 9, 44, 38, 23, 98);
+
+        function ordenaNum(a, b) {
+            return a - b;
+        }
+
+        num.sort(ordenaNum);
+
+        for(let i=0; i < num.length; i+=1) {
+            document.write(num[i]+" ");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
