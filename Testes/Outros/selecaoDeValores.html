@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecionando o Curos</title>
+</head>
+
+<body>
+    <h1>Cursos</h1>
+    <select onchange="mensagem()" id="cursos">
+        <option>Escolha o Curso</option>
+        <option>HTML</option>
+        <option>CSS</option>
+        <option>JavaScript</option>
+    </select>
+    <button style="display: flex; margin-top: 10px;" onclick="resposta()">OK</button>
+
+    <script>
+        function mensagem() {
+            const resposta = document.getElementById("cursos").value;
+            if (resposta !== "Escolha o Curso" && resposta !== undefined) {
+                return resposta;
+            } else {
+                return 'Curso não escolhido!!!'
+            }
+        }
+
+        function resposta() {
+            alert(mensagem());
+        }
+    </script>
+</body>
+
+</html>
