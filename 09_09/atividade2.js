@@ -9,7 +9,7 @@ const products = [
 
 const result = products
     .filter(({ price }) => price > 1500)
-    .sort((a, b) => b.price - a.price)
-    .map(({ name, price }) => ({ name: name, price: price * 0.9 }));
+    .sort(({price: a},{price: b}) => b - a)
+    .map(({ name, price }) => ({ name, price: price * 0.9 }));
 
 console.log(result);
