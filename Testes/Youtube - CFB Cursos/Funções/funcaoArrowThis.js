@@ -9,14 +9,16 @@ function aluno(nome, nota) {
     // variáveis não vinculadas com as originais
     this.dados_anonimo = function() {
         setTimeout(function(){
+            // Aqui as variáveis pertencem ao escopo da função setTimeout
             console.log(this.nome);
             console.log(this.nota);            
         },2000);
     }
     
     /* 
-        devido à sintaxe da arrow function, permite que os dados sejam acessados
-        a partir das variávies originais pertencentes à função aluno. 
+        o arrow function devido à sintaxe não usando o contexto léxico, permite
+        que os dados sejam acessados a partir das variávies originais
+        pertencentes à função aluno. 
     */
     this.dados_arrow = function() {
         setTimeout(() => {
