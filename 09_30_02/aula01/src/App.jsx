@@ -1,5 +1,6 @@
 import './App.css'
 import NavBar from './components/Navbar'
+import Products from './pages/Products'
 
 function App() {
   
@@ -8,10 +9,8 @@ function App() {
   return (
     <>
       <h1>Primeira página ReactJS</h1>
-      
-      <h2>Nome da variável: {nome}</h2>
-      
-      <NavBar />
+      <Products/>
+      <NavBar/>
 
     </>
   )

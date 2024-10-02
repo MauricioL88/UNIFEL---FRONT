@@ -1,7 +1,7 @@
-export default function Button () {
+export default function Button (props) {
     return (
         <>
-            <input type="button" value="Enviar"/>
+            <button>{props.children}</button>
         </>
     )
 }
