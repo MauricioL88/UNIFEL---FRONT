@@ -7,7 +7,12 @@ function Products() {
             <h3>Produtcs</h3>
             <ol>
                 {products.map((product) => {
-                    return <li>{product}</li>
+                    return (
+                        <>
+                            <li>{product.name}</li>
+                            <img src={product.image} alt="" />
+                        </>
+                    )
                 })}
             </ol>
         </>
