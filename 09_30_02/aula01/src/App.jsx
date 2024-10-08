@@ -8,10 +8,11 @@ function App() {
 
   return (
     <>
-      <h1>Primeira página ReactJS</h1>
-      <Products/>
+      {/*
+          <h1>Primeira página ReactJS</h1>
+          <Products/>
+      */}      
       <NavBar/>
-
     </>
   )
 }
