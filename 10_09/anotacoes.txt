@@ -1,0 +1,10 @@
+criar um projeto "pronto" react usando comando:
+npm create vite@latest
+- decide criar o projeto
+- digita o no do projeto (criar pasta)
+- escolhe o framework (react)
+- escolhe a linguagem (javascript/vanilla)
+
+cd nome-da-pasta-do-projeto
+npm install
+npm run dev (live server do vite)
