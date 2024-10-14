@@ -1,0 +1,27 @@
+* {
+    background: rgb(75, 75, 75);
+    background: linear-gradient(90deg, rgba(75, 75, 75, 1) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+.com-efeito {
+    font-family: monospace; /* Estilo de fonte que dá um efeito de digitação */
+    white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+    overflow: hidden; /* Esconde o texto que ainda não foi "digitado" */
+    border-right: 2px solid; /* Cria um cursor piscante */
+    width: 0; /* Começa com o parágrafo escondido */
+    animation: typing 3.5s steps(25, end) infinite, blink-caret 0.75s step-end infinite; /* Animação de digitação e cursor piscando, em loop */
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+}
+
+@keyframes typing {
+    0% { width: 0; }   /* Início: sem texto */
+    50% { width: 100%; } /* Metade da animação: texto totalmente digitado */
+    100% { width: 0; }  /* Final: o texto desaparece */
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: whitesmoke; }
+}
