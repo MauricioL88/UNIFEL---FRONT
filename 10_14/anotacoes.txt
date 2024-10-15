@@ -1,0 +1,22 @@
+Criação de projeto react através do Vite
+npm create vit@latest
+
+-Diz o nome do projeto
+-Escolhe o react como framework
+-Escolhe o JS vanilha
+
+cd pasta-do-projeto
+
+Instala a dependencia de rotas do react
+npm install react-router-dom
+
+-Vai ao arquivo main.jsx e importa { BrowserRouter }
+-Dentro da tag StrictMode adiciona a tag BrowserRouter envelopando a tag App
+
+-Para definir as rotas de várias páginas:
+ - Na página App importa { Route, Routes }
+ - Na tag anônima utiliza a tag Routes
+ - Dentro da tag Routes defines as páginas com a tag Route
+
+Rodar o projeto
+npm run dev
